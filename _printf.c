@@ -17,13 +17,20 @@ int _printf(const char *format, ...)
 	};
 
 	va_start(char_list, format);
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+	if (format == NULL || (format[0] == '%' && format[0] == '\0'))
 		exit(1);
 	for (; format && format[i]; i++)
 	{
 		if (format[i] != '%')
 		{
 			_putchar(format[i]);
+			len++;
+		}
+		else if ((format[i] == '%' && format[i + 1] == '%') ||
+			 (format[i] == '%' && format[i + 1] == '\0'))
+		{
+			_putchar('%');
+			i++;
 			len++;
 		}
 		else
