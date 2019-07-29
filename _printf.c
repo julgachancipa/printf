@@ -13,7 +13,6 @@ int _printf(const char *format, ...)
 	c_f selector[] = {
 		{"c", f_character},
 		{"s", f_string},
-		{"%", f_percent},
 		{NULL, NULL}
 	};
 
