@@ -6,8 +6,6 @@
  */
 int f_character(va_list char_list)
 {
-	int i = 1;
-
 	_putchar(va_arg(char_list, int));
-	return (i);
+	return (1);
 }
