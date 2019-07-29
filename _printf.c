@@ -13,11 +13,12 @@ int _printf(const char *format, ...)
 	c_f selector[] = {
 		{"c", f_character},
 		{"s", f_string},
+		{"%", f_percent},
 		{NULL, NULL}
 	};
 
 	va_start(char_list, format);
-	if (format == NULL || (format[0] == '%' && format[0] == '\0'))
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		exit(1);
 	for (; format && format[i]; i++)
 	{
