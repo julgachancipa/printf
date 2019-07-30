@@ -6,7 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-	unsigned int i = 0, j = 0, len = 0;
+	unsigned int i = 0, j, flag = 0, len = 0;
 	va_list char_list;
 	c_f selector[] = { {"c", f_character},
 		{"s", f_string}, {NULL, NULL} };
@@ -21,23 +21,25 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			len++;
 		}
-		else if ((format[i] == '%' && format[i + 1] == '%') ||
-			 (format[i] == '%' && format[i + 1] == '\n'))
+		else if (format[i] == '%' && format[i + 1] == '%')
 		{
 			_putchar('%');
-			if (format[i + 1] == '\n')
-				_putchar('\n');
 			i++;
 			len++;
 		}
 		else
 		{
-			i++;
 			for (j = 0; j < 2; j++)
 			{
-				if (format[i] == selector[j].sp_char[0])
+				if (format[i + 1] == selector[j].sp_char[0])
+				{
 					len += selector[j].f(char_list);
+					flag = 1;
+					i++;
+				}
 			}
+			if (flag == 0)
+				len += _putchar(format[i]);
 		}
 	}
 	va_end(char_list);
