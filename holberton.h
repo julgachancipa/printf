@@ -15,6 +15,8 @@ int _printf(const char *format, ...);
 int _strlen(char *s);
 int f_character(va_list char_list);
 int f_string(va_list char_list);
+int f_integer(va_list char_list);
+void reverse_array(char *a, int n);
 /**
  * struct call_function - character and function
  * @sp_char: character that specifies the
