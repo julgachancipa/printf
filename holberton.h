@@ -19,7 +19,7 @@ int f_integer(va_list char_list);
 int f_binary(va_list char_list);
 void reverse_array(char *a, int n);
 int print_integer(long num);
-int print_binary(long num);
+int print_binary(unsigned int num);
 /**
  * struct call_function - character and function
  * @sp_char: character that specifies the
