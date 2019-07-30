@@ -1,33 +1,37 @@
 #include "holberton.h"
 /**
  * f_integer - function that prints an string
- * @char_list: string to be print
+ * @char_list: arg to be print
  * Return: the lenght of the string
  */
 int f_integer(va_list char_list)
 {
-	int i = 0;
-	int aux = 0;
-	int len = 0;
 	int num = va_arg(char_list, int);
-	char str[1024];
+	int len = 0;
 
 	if (num < 0)
 	{
-		num = num * (-1);
 		_putchar('-');
-		len = 1;
+		num = -num;
+		len++;
 	}
-	while (num)
+	len += print_integer(num);
+	return (len);
+}
+/**
+ * print_integer - function that prints an string
+ * @num: num to be print
+ * Return: the lenght of the string in abs. value
+ */
+int print_integer(int num)
+{
+	int len = 0;
+
+	if (num / 10)
 	{
-		aux = num % 10;
-		str[i] = aux + 48;
-		num = num / 10;
-		i++;
+		len += print_integer(num / 10);
 	}
-	str[i] = '\0';
-	len += i;
-	reverse_array(str, i);
-	_puts(str);
+	_putchar((num % 10) + '0');
+	len++;
 	return (len);
 }
