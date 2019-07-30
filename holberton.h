@@ -16,8 +16,10 @@ int _strlen(char *s);
 int f_character(va_list char_list);
 int f_string(va_list char_list);
 int f_integer(va_list char_list);
+int f_binary(va_list char_list);
 void reverse_array(char *a, int n);
 int print_integer(long num);
+int print_binary(long num);
 /**
  * struct call_function - character and function
  * @sp_char: character that specifies the
