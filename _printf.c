@@ -21,9 +21,12 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			len++;
 		}
-		else if (format[i] == '%' && format[i + 1] == '%')
+		else if ((format[i] == '%' && format[i + 1] == '%') ||
+			 (format[i] == '%' && format[i + 1] == '\n'))
 		{
 			_putchar('%');
+			if (format[i + 1] == '\n')
+				_putchar('\n');
 			i++;
 			len++;
 		}
