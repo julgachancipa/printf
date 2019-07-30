@@ -6,8 +6,8 @@
  */
 int f_integer(va_list char_list)
 {
-	long num = va_arg(char_list, long);
-	long len = 0;
+	long num = va_arg(char_list, int);
+	int len = 0;
 
 	if (num < 0)
 	{
@@ -25,7 +25,7 @@ int f_integer(va_list char_list)
  */
 int print_integer(long num)
 {
-	long len = 0;
+	int len = 0;
 
 	if (num / 10)
 	{
