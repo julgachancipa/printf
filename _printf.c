@@ -8,8 +8,8 @@ int _printf(const char *format, ...)
 {
 	unsigned int i = 0, j, flag = 0, len = 0;
 	va_list char_list;
-	c_f selector[] = { {"c", f_character},
-		{"s", f_string}, {NULL, NULL} };
+	c_f selector[] = { {"c", f_character}, {"s", f_string},
+			   {"d", f_integer}, {"i", f_integer}, {NULL, NULL} };
 
 	va_start(char_list, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			for (j = 0; j < 2; j++)
+			for (j = 0; j < 4; j++)
 			{
 				if (format[i + 1] == selector[j].sp_char[0])
 				{
