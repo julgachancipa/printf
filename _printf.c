@@ -6,7 +6,7 @@
  */
 int _printf(const char *format, ...)
 {
-	unsigned int i = 0, j, len = 0;
+	unsigned int i = 0, j, flag = 0, len = 0;
 	va_list char_list;
 	c_f selector[] = { {"c", f_character}, {"s", f_string},
 			   {"d", f_integer}, {"i", f_integer}, {NULL, NULL} };
@@ -31,9 +31,11 @@ int _printf(const char *format, ...)
 				{
 					len += selector[j].f(char_list);
 					i++;
+					flag++;
 				}
 			}
-			len += _putchar(format[i]);
+			if (flag == 0)
+				len += _putchar(format[i]);
 		}
 	}
 	va_end(char_list);
