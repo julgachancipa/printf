@@ -6,7 +6,7 @@
  */
 int f_binary(va_list char_list)
 {
-        long num = va_arg(char_list, int);
+        unsigned int num = va_arg(char_list, int);
         int len = 0;
 
         len = print_binary(num);
@@ -17,7 +17,7 @@ int f_binary(va_list char_list)
  * @num: num to be print
  * Return: the lenght of the printed chars
  */
-int print_binary(long num)
+int print_binary(unsigned int num)
 {
         int len = 0;
 
