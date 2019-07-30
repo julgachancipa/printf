@@ -36,11 +36,7 @@ int _printf(const char *format, ...)
 				if (format[i] == selector[j].sp_char[0])
 					len += selector[j].f(char_list);
 				else
-				{
-					_putchar(format[i - 1]);
-					_putchar(format[i]);
-					len = 2;
-				}
+					len += _putchar(format[j]);
 			}
 		}
 	}
