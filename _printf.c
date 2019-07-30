@@ -25,22 +25,22 @@ int _printf(const char *format, ...)
 			 (format[i] == '%' && format[i + 1] == '\n'))
 		{
 			_putchar('%');
-			if (format[i + 1] == '\n')
-				_putchar('\n');
 			i++;
 			len++;
 		}
 		else
 		{
 			i++;
-			j = 0;
-			while (j < 2)
+			for (j = 0; j < 2; j++)
 			{
 				if (format[i] == selector[j].sp_char[0])
-				{
 					len += selector[j].f(char_list);
+				else
+				{
+					_putchar(format[i - 1]);
+					_putchar(format[i]);
+					len = 2;
 				}
-				j++;
 			}
 		}
 	}
