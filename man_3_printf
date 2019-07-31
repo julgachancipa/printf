@@ -41,6 +41,12 @@ print a string
 .B %c
 print a character
 .PP
+.B %d
+print a decimal
+.PP
+.B %i
+print an integer
+.PP
 .B %b
 print a binary format number
 .PP
