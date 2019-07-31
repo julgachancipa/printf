@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * f_string - function that prints an string
+ * f_rot13 - function that prints a string encrypted with rot-13
  * @char_list: string to be print
  * Return: the lenght of the string
  */
