@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	c_f selector[] = { {"c", f_character}, {"s", f_string},
 			   {"b", f_binary}, {"r", f_reverse},
 			   {"d", f_integer}, {"i", f_integer},
-			   {NULL, NULL} };
+			   {"R", f_rot13}, {NULL, NULL} };
 
 	va_start(char_list, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			for (j = 0; j < 6; j++)
+			for (j = 0; j < 7; j++)
 			{
 				if (format[i + 1] == selector[j].sp_char[0])
 				{
