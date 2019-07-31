@@ -55,7 +55,7 @@ Upon successful return, these functions return the number of characters printed 
 #include "holberton.h"
  int main(void)
  {
-   _printf("%s", My name is _printf);
+   _printf("%s\n", "My name is _printf");
    return (0);
  }
 .SH SEE ALSO
