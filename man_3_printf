@@ -1,0 +1,34 @@
+.TH _printf 3 "30 Jul 2019" "Holberton School V0.0" "User Commands"
+.SH NAME
+.B _printf
+- format and print data
+.SH SYNOPSIS
+.B _printf
+.I FORMAT [ARGUMENT]
+.B ...
+.PP
+.B _printf
+.I OPTION
+.SH DESCRIPTION
+The _printf() function produce output according to a format as described below.
+.PP FORMAT
+.PP
+\\\\ backslash
+.PP
+'\\\n' new line
+.PP
+%% a single %
+.SH OPTIONS
+.PP Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
+.PP
+.B --help
+display this help and exit
+.PP
+.B --version
+output version information and exit
+.SH SEE ALSO
+.I printf()
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Writen by  Emma Gachancipa  and  Yesid Gutierrez  Holberton Students
