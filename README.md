@@ -1,45 +1,48 @@
 <p>
 <img width="260" height="170" src="https://davidjohncoleman.com/wp-djc/wp-content/uploads/2017/06/HBTN-Borderless-CMYK-Logo-Vertical-Color-Black@1200ppi-300x236.png" align="right" >
 </p>
+
+
+
+
+
 # _printf
 
-Our printf function like the function in C langage
+Our _printf() function like the function printf() in C langage
 
 ## Prerequisites
 
-for this function you need knowdledge about a loops(if, else, else if, for, while)
-arays, pointers, malloc, free, structurs, typedef, variadic funcions, recursion
+for this function you need knowledge about loops(if, else, else if, for, while)
+16 arrays, pointers, malloc, free, structs, typedef, variadic functions and recursion
 
 ### Installing
 
-for have the code in your local machine you only need download the code files and put it
-into a directory and compilet it with gcc -Wall -Wextra -Werror -pedantic
-
+for have the code in your local machine you only need download the code files and put it into a directory and compile it with gcc compiler 
 ```
-gcc -Wall -Werror -Wextra -pedantic _printf.c main.c -o _printf
+gcc -Wall -Werror -Wextra -pedantic -Wno-format *.c
 ```
 ## Built With
 
-All the code was write on Emacs Version..... under ubuntu 14.04 using the compiler version
-gcc 4.84
+All the code was write under ubuntu 14.04 using the compiler version
+gcc 4.84 for 64 bits
 
 ## Contributing
 
-* Emma Gachancipa - Holberton Student
-* Yesid Gutierrez - Holberton Student
+-- Emma Gachancipa - Holberton Student
+-- Yesid Gutierrez - Holberton Student
 
 ## Versioning
 
-write here versions availables
+V 0.0 for manual review
 
 ## Authors
 
-***Emma Gachancipa***925@holbertonschool.com
-***Yesid Guttierrez**944@holbertonshcool.com
+---Emma Gachancipa---925@holbertonschool.com
+---Yesid Guttierrez--944@holbertonshcool.com
 
 ## Tasks
 
-| File               | Description                              |
+| Task             | Description                              |
 | ------------------ | ---------------------------------------- |
 | Task 0  | function that produces output according to a format: c, s and % |
 | Task 1  | Function that produces conversion specifier d and i |
@@ -58,3 +61,19 @@ write here versions availables
 | Task 14 | Function that handle the r custom conversion specifiers|
 | Task 15 | Function that handle the R custom conversion specifiers|
 | Task 16 | All the above options work well together|
+## Files
+44
+45| File               | Description                              |
+46| ------------------ | ---------------------------------------- |
+47|   _printf.c      | Main code about the function |
+48|   _putchar.c     | To print a character |
+49|   _puts.c        | To print an string |
+50|   f_binary.c     | To print a decimal number to binary number |
+51|   f_character.c  | To print one character |
+52|   f_integer.c    | To print an integer number |
+53|   f_reverse.c    | To print an string in reverse |
+54|   f_rot13.c      | To encryp text in rot 13 |
+55|   f_string.c     | To print an sring |
+56|   holberton.h    | Libraries and prototypes |
+57|   man_3_printf   | Man page for _printf |
+58|   rev_str.c      | To print an string in reverse|
