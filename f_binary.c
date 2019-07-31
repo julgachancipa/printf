@@ -6,11 +6,11 @@
  */
 int f_binary(va_list char_list)
 {
-        unsigned int num = va_arg(char_list, int);
-        int len = 0;
+	unsigned int num = va_arg(char_list, int);
+	int len = 0;
 
-        len = print_binary(num);
-        return (len);
+	len = print_binary(num);
+	return (len);
 }
 /**
  * print_binary - function that prints in binary
@@ -19,9 +19,9 @@ int f_binary(va_list char_list)
  */
 int print_binary(unsigned int num)
 {
-        int len = 0;
+	int len = 0;
 
-        if (num / 2)
+	if (num / 2)
 		len += print_binary(num / 2);
 	if (num == 1)
 	{
