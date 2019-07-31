@@ -21,6 +21,9 @@ int f_reverse(va_list char_list);
 int print_integer(long num);
 int print_binary(unsigned int num);
 int f_rot13(va_list char_list);
+int f_hexa_lc(va_list char_list);
+int f_hexa_uc(va_list char_list);
+int f_octal(va_list char_list);
 /**
  * struct call_function - character and function
  * @sp_char: character that specifies the
