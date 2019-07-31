@@ -18,7 +18,6 @@ int f_string(va_list char_list);
 int f_integer(va_list char_list);
 int f_binary(va_list char_list);
 int f_reverse(va_list char_list);
-void reverse_array(char *a, int n);
 int print_integer(long num);
 int print_binary(unsigned int num);
 int f_rot13(va_list char_list);
