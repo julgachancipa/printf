@@ -62,18 +62,18 @@ V 0.0 for manual review
 | Task 15 | Function that handle the R custom conversion specifiers|
 | Task 16 | All the above options work well together|
 ## Files
-44
-45| File               | Description                              |
-46| ------------------ | ---------------------------------------- |
-47|   _printf.c      | Main code about the function |
-48|   _putchar.c     | To print a character |
-49|   _puts.c        | To print an string |
-50|   f_binary.c     | To print a decimal number to binary number |
-51|   f_character.c  | To print one character |
-52|   f_integer.c    | To print an integer number |
-53|   f_reverse.c    | To print an string in reverse |
-54|   f_rot13.c      | To encryp text in rot 13 |
-55|   f_string.c     | To print an sring |
-56|   holberton.h    | Libraries and prototypes |
-57|   man_3_printf   | Man page for _printf |
-58|   rev_str.c      | To print an string in reverse|
+
+| File               | Description                              |
+| ------------------ | ---------------------------------------- |
+|   _printf.c      | Main code about the function |
+|   _putchar.c     | To print a character |
+|   _puts.c        | To print an string |
+|   f_binary.c     | To print a decimal number to binary number |
+|   f_character.c  | To print one character |
+|   f_integer.c    | To print an integer number |
+|   f_reverse.c    | To print an string in reverse |
+|   f_rot13.c      | To encryp text in rot 13 |
+|   f_string.c     | To print an sring |
+|   holberton.h    | Libraries and prototypes |
+|   man_3_printf   | Man page for _printf |
+|   rev_str.c      | To print an string in reverse|
