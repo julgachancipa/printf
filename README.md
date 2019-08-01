@@ -54,8 +54,8 @@ V 0.0 for manual review
 
 ## Authors
 
----Emma Gachancipa---925@holbertonschool.com                                    
----Yesid Guttierrez--944@holbertonshcool.com                                    
+---Emma Gachancipa   925@holbertonschool.com                                    
+---Yesid Guttierrez  944@holbertonshcool.com                                    
 
 ## Tasks
 
