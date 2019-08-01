@@ -8,7 +8,23 @@
 
 # _printf
 
-Our _printf() function like the function printf() in C langage
+The _printf() function produce output according to a format as described below.
+%s print a string
+%c print a character
+%d print a decimal
+%i print an integer
+%b print a binary format number
+%r print the reversed string
+%R print the rot-13ed string
+
+## Example
+
+#include "holberton.h"
+ int main(void)
+ {
+   _printf("%s\n", "My name is _printf");
+   return (0);
+ }
 
 ## Prerequisites
 
