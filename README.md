@@ -9,6 +9,7 @@
 # _printf
 
 The _printf() function produce output according to a format as described below.
+                                                                                
        * %s print a string                                                      
        * %c print a character                                                   
        * %d print a   decimal                                                   
@@ -16,16 +17,16 @@ The _printf() function produce output according to a format as described below.
        * %b print a binary format number                                        
        * %r print the reversed string                                           
        * %R print the rot-13ed string                                           
-
+                                                                                
 ## Example
 
-#include "holberton.h"
- int main(void)
- {
-   _printf("%s\n", "My name is _printf");
-   return (0);
- }
-
+#include "holberton.h"                                                          
+int main(void)                                                                  
+{                                                                               
+   _printf("%s\n", "My name is _printf");                                       
+   return (0);                                                                  
+ }                                                                              
+                                                                                
 ## Prerequisites
 
 for this function you need knowledge about loops(if, else, else if, for, while)
@@ -44,8 +45,8 @@ gcc 4.84 for 64 bits
 
 ## Contributing
 
--- Emma Gachancipa - Holberton Student
--- Yesid Gutierrez - Holberton Student
+-- Emma Gachancipa - Holberton Student                                          
+-- Yesid Gutierrez - Holberton Student                                          
 
 ## Versioning
 
@@ -53,8 +54,8 @@ V 0.0 for manual review
 
 ## Authors
 
----Emma Gachancipa---925@holbertonschool.com
----Yesid Guttierrez--944@holbertonshcool.com
+---Emma Gachancipa---925@holbertonschool.com                                    
+---Yesid Guttierrez--944@holbertonshcool.com                                    
 
 ## Tasks
 
