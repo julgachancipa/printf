@@ -9,13 +9,13 @@
 # _printf
 
 The _printf() function produce output according to a format as described below.
-%s print a string
-%c print a character
-%d print a decimal
-%i print an integer
-%b print a binary format number
-%r print the reversed string
-%R print the rot-13ed string
+Markup: * %s print a string
+	* %c print a character
+	* %d print a   decimal
+	* %i print an integer
+	* %b print a binary format number
+	* %r print the reversed string
+	* %R print the rot-13ed string
 
 ## Example
 
